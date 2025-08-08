@@ -11,8 +11,8 @@ if (!$_SESSION['niveau_admin'] == 3) {
     header('location: index.php');
 }
 
-include('include/head.php');
 $title = "Supprimer une musique";
+include('include/head.php');
 include('include/navbar.php');
 include('include/functionDb.php');
 include('include/function.php');

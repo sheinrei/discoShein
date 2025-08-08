@@ -3,7 +3,6 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
 }

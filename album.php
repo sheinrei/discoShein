@@ -9,7 +9,7 @@ if (!$_SESSION['is_connect'] == true) {
 }
 
 
-$title = "index";
+$title = "Liste d'album";
 include('include/navbar.php');
 include('include/head.php');
 include("include/functionDb.php");

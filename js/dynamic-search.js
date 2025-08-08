@@ -11,7 +11,7 @@ $('#searchInput').on('input', function () {
         .then(res => res.json())
         .then(data => {
             let html = "";
-
+            console.log(data)
 
             if (data.length > 3) {
                 for (i = 0; i < 3; i++) {
