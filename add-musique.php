@@ -1,8 +1,6 @@
 <?php
+include('include/head.php');
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
@@ -14,7 +12,6 @@ if (!$_SESSION['niveau_admin'] == 3) {
 $title = "Ajouter des musiques";
 include('include/navbar.php');
 include('include/functionDb.php');
-include('include/head.php');
 $title = 'Ajouter une musique';
 
 

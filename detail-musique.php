@@ -1,8 +1,5 @@
 <?php
-
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+include("include/head.php");
 
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
@@ -11,7 +8,6 @@ if (!$_SESSION['is_connect'] == true) {
 
 $title = "Detail de ma chanson";
 
-include("include/head.php");
 include("include/functionDb.php");
 include("include/navbar.php");
 include("include/function.php");

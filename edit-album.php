@@ -1,8 +1,4 @@
 <?php
-
-/* if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-} */
 include("include/head.php");
 
 if (!$_SESSION['is_connect'] == true) {
