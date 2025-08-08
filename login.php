@@ -1,8 +1,9 @@
 <?php
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+include('include/head.php');
+$title = "Espace connexion";
+
+
 
 include('include/function-canConnect.php');
 
@@ -15,8 +16,6 @@ if (count($_POST) > 0) {
     }
 }
 
-$title = "Espace connexion";
-include('include/head.php');
 
 ?>
 

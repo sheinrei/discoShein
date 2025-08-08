@@ -1,5 +1,7 @@
 <?php
 
+include('include/head.php');
+
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
 }
@@ -9,7 +11,6 @@ if (!$_SESSION['niveau_admin'] == 3) {
 
 
 $title = "Supprimer album";
-include('include/head.php');
 include('include/navbar.php');
 include("include/functionDB.php");
 

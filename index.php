@@ -1,9 +1,7 @@
 <?php
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
+include('include/head.php');
 
 if (!$_SESSION['is_connect']) {
     header('Location: login.php');
@@ -11,11 +9,9 @@ if (!$_SESSION['is_connect']) {
 
 
 $title = "index";
-include('include/head.php');
 include('include/navbar.php');
 include("include/functionDb.php");
 
-echo $_SESSION['niveau_admin'];
 
 ?>
 

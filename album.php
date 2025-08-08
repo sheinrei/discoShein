@@ -1,11 +1,12 @@
 <?php
 
+include('include/head.php');
+
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
 }
 
 $title = "index";
-include('include/head.php');
 include('include/navbar.php');
 
 include("include/functionDb.php");

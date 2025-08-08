@@ -2,8 +2,8 @@
 
 
 
-$title = 'Creer un compte utilisateur';
 include('include/head.php');
+$title = 'Creer un compte utilisateur';
 
 
 include('include/functionDb.php');

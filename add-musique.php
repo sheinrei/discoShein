@@ -1,5 +1,9 @@
 <?php
 
+include('include/head.php');
+
+$title = 'Ajouter une musique';
+
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
 }
@@ -8,7 +12,6 @@ if (!$_SESSION['niveau_admin'] == 3) {
 }
 
 $title = "Ajouter des musiques";
-include('include/head.php');
 include('include/navbar.php');
 include('include/functionDb.php');
 
