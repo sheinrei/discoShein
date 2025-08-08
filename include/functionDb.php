@@ -1,9 +1,10 @@
 <?php
 
+$config = require "../php-api/config.php";
 
-$dsn = 'mysql:host=localhost;dbname=miniprojetphp';
-$user = 'root';
-$pass = '';
+$dsn = $config['dsn'];
+$user =  $config['user'];
+$pass =  $config['password'];
 $pdo = new \PDO($dsn, $user, $pass);
 
 
