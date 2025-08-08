@@ -1,11 +1,12 @@
 <select name="nom_musique">
     <?php
 
-$dsn = 'mysql:host=localhost;dbname=miniprojetphp';
-$user = 'root';
-$pass = '';
-$pdo = new \PDO($dsn, $user, $pass);
+$config = require __DIR__ . '/../php-api/config.php';
 
+$dsn = $config['dsn'];
+$user =  $config['user'];
+$pass =  $config['password'];
+$pdo = new \PDO($dsn, $user, $pass);
 
     function searchMusique($pdo)
     {

@@ -1,6 +1,6 @@
 <?php
 
-$config = require "../php-api/config.php";
+$config = require __DIR__ . '/../php-api/config.php';
 
 $dsn = $config['dsn'];
 $user =  $config['user'];
