@@ -1,6 +1,8 @@
 <?php
 
-include('include/head.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
@@ -9,6 +11,7 @@ if (!$_SESSION['niveau_admin'] == 3) {
     header('location: index.php');
 }
 
+include('include/head.php');
 $title = "Supprimer une musique";
 include('include/navbar.php');
 include('include/functionDb.php');

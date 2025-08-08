@@ -1,7 +1,8 @@
 <?php
 
-include('include/head.php');
-$title = 'Creer un album';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
@@ -10,7 +11,8 @@ if (!$_SESSION['niveau_admin'] == 3) {
     header('location: index.php');
 }
 
-$title = "Ajouter album";
+$title = 'Creer un album';
+include('include/head.php');
 include('include/navbar.php');
 include('include/functionDb.php');
 

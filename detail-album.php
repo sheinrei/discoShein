@@ -1,12 +1,16 @@
 <?php
 
-include("include/head.php");
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 
 if (!$_SESSION['is_connect'] == true) {
     header('Location: login.php');
 }
 
 $title = 'Detail d\'album';
+include("include/head.php");
 include('include/navbar.php');
 include('include/functionDb.php');
 

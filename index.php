@@ -1,7 +1,8 @@
 <?php
 
-
-include('include/head.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if (!$_SESSION['is_connect']) {
     header('Location: login.php');
@@ -11,6 +12,7 @@ if (!$_SESSION['is_connect']) {
 $title = "index";
 include('include/navbar.php');
 include("include/functionDb.php");
+include('include/head.php');
 
 
 ?>

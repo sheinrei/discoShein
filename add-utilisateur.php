@@ -1,12 +1,14 @@
 <?php
 
 
-
-include('include/head.php');
-$title = 'Creer un compte utilisateur';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 
 include('include/functionDb.php');
+include('include/head.php');
+$title = 'Creer un compte utilisateur';
 
 if (count($_POST) > 0) {
     $nom = $_POST["nom"];
