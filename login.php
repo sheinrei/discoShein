@@ -1,19 +1,22 @@
 <?php
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
+include('include/function-canConnect.php');
 
 if (count($_POST) > 0) {
     
     if (canConnect($pdo, $_POST['mdp'], $_POST['email']) == true) {
         header('Location: index.php');
     } else {
-        header('Location: login.php');
+        echo "Echec de la connexion.";
     }
 }
 
 $title = "Espace connexion";
 include('include/head.php');
-include('include/function-canConnect.php');
 
 ?>
 
