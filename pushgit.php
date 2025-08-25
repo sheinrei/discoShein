@@ -1,3 +1,3 @@
 <?php
 
-`whoami`
+`git pull`;
