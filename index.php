@@ -47,7 +47,7 @@ include("include/functionDb.php");
 
 <body>
     <div class="content">
-        <h2>Bienvenue <?= $_SESSION['nom_utilisateur'] ?></h2>
+        <h2>Bienvenue teste en https <?= $_SESSION['nom_utilisateur'] ?></h2>
 
 
         <div class="content_intro">
