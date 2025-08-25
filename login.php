@@ -3,7 +3,7 @@ session_start();
 include('include/function-canConnect.php');
 
 if (count($_POST) > 0) {
-    
+
     if (canConnect($pdo, $_POST['mdp'], $_POST['email']) == true) {
         header('Location: index.php');
     } else {
@@ -41,66 +41,69 @@ $title = "Espace connexion";
 
     <!-- mon css -->
     <link rel='stylesheet' href="style.css">
-<style>
-   * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    /* Centrage de la page */
-    body {
-        background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    }
+        /* Centrage de la page */
+        body {
+            background: linear-gradient(135deg, #ffffffff, #4ca1af);
+        }
 
-    /* Boîte de login */
-    .login-container {
-        background-color:rgb(255, 255, 255);
-        padding: 2.5rem;
-        border-radius: 12px;
-        box-shadow: 0 10px 70px rgba(0, 0, 0, 0.2);
-        width: 100%;
-        max-width: 400px;
-        margin-top:50px;
-    }
+        /* Boîte de login */
+        .login-container {
+            background-color: rgb(255, 255, 255);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 70px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    /* Formulaire */
+        /* Formulaire */
 
-    .login-form input {
-        width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 1rem;
-    }
+        .login-form input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
 
-    .btn_submit,.btn_add_compte {
-        width: 100%;
-        padding: 0.75rem;
-        border: none;
-        border-radius: 8px;
-        background-color: #4ca1af;
-        color: white;
-        font-weight: bold;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 1s ease;
-    }
+        .btn_submit,
+        .btn_add_compte {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #4ca1af;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 1s ease;
+        }
 
-    .btn_submit:hover,.btn_add_compte:hover {
-        background-color:rgb(51, 125, 137);
-    }
+        .btn_submit:hover,
+        .btn_add_compte:hover {
+            background-color: rgb(51, 125, 137);
+        }
 
-    .btn_add_compte {
-        margin-top: 20px;
-    } 
+        .btn_add_compte {
+            margin-top: 20px;
+        }
 
-    footer{
-        display: inherit;
-    }
-
-</style>
+        footer {
+            display: inherit;
+        }
+    </style>
 
 
 <body>
