@@ -1,6 +1,10 @@
 <?php
 session_start();
-$title;
+
+if (!$_SESSION['is_connect']) {
+    header('Location: login.php');
+}
+
 
 ?>
 

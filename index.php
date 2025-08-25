@@ -2,9 +2,6 @@
 include('include/head.php');
 
 
-if (!$_SESSION['is_connect']) {
-    header('Location: login.php');
-}
 
 
 $title = "index";
