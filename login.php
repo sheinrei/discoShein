@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('include/function-canConnect.php');
 
 if (count($_POST) > 0) {
