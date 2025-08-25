@@ -2,8 +2,6 @@
 include('include/head.php');
 
 
-
-
 $title = "index";
 include('include/navbar.php');
 include("include/functionDb.php");
